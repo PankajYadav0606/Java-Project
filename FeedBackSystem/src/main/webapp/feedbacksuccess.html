@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Submitted</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #43cea2, #185a9d);
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    .header {
+      background-color: #222;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav h1 {
+      color: white;
+      margin: 0;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .message-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+      backdrop-filter: blur(6px);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .message-box h2 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .message-box p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .message-box a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #ffffff;
+      color: #333;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .message-box a:hover {
+      background-color: #e0e0e0;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    @media screen and (max-width: 600px) {
+      .message-box {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="nav">
+      <h1>Online Feedback System</h1>
+    </div>
+  </header>
+
+  <!-- Success Message -->
+  <div class="container">
+    <div class="message-box">
+      <h2>Feedback Submitted Successfully!</h2>
+      <p>Thank you for your valuable feedback.</p>
+      <a href="index.html">Go to Home</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Online Feedback System | Designed by <a href="#">YourTeam</a>
+  </footer>
+
+</body>
+</html>

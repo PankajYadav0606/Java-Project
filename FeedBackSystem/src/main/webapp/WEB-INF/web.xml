@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<element>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.1">
+    
+    <display-name>Online Feedback System</display-name>
+
+    <!-- Intro Servlet -->
+    <servlet>
+        <servlet-name>IntroServlet</servlet-name>
+        <servlet-class>IntroServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IntroServlet</servlet-name>
+        <url-pattern>/index.html</url-pattern>
+    </servlet-mapping>
+
+	    <servlet>
+        <servlet-name>UserManagementServlet</servlet-name>
+        <servlet-class>UserManagementServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserManagementServlet</servlet-name>
+        <url-pattern>/adminAddUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserManagementServlet</servlet-name>
+        <url-pattern>/adminRemoveUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserManagementServlet</servlet-name>
+        <url-pattern>/adminGetUsers</url-pattern>
+    </servlet-mapping>
+
+    
+    
+    <!-- User Registration Servlet -->
+    <servlet>
+        <servlet-name>UserRegisterServlet</servlet-name>
+        <servlet-class>UserRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserRegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- User Login Servlet -->
+    <servlet>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <servlet-class>UserLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserLoginServlet</servlet-name>
+        <url-pattern>/userLogin</url-pattern>
+    </servlet-mapping>
+
+    <!-- Feedback Servlet -->
+    <servlet>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <servlet-class>FeedbackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/submitFeedback</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Login Servlet -->
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/adminLogin</url-pattern>
+    </servlet-mapping>
+
+    <!-- Question Management Servlet -->
+    <servlet>
+        <servlet-name>QuestionServlet</servlet-name>
+        <servlet-class>QuestionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QuestionServlet</servlet-name>
+        <url-pattern>/questionServlet</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+    <servlet-name>FetchQuestionsServlet</servlet-name>
+    <servlet-class>FetchQuestionsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>FetchQuestionsServlet</servlet-name>
+    <url-pattern>/fetchQuestions</url-pattern>
+</servlet-mapping>
+	
+	
+    <!-- Result Servlet -->
+    <servlet>
+        <servlet-name>ResultServlet</servlet-name>
+        <servlet-class>ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResultServlet</servlet-name>
+        <url-pattern>/resultServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
+</element>

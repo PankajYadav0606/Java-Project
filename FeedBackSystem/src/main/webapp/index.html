@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Feedback System</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        background-color: #222;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav h1 {
+        color: white;
+        margin: 0;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 15px;
+      }
+
+      .nav-buttons a {
+        text-decoration: none;
+        background-color: white;
+        color: #222;
+        padding: 10px 15px;
+        border-radius: 6px;
+        font-weight: 500;
+        transition: 0.3s ease;
+      }
+
+      .nav-buttons a:hover {
+        background-color: #ddd;
+        color: #000;
+      }
+
+      .home {
+        background-image: url("bg.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .justified-text {
+        color: white;
+        margin-top: 40px;
+        max-width: 800px;
+      }
+
+      .action-buttons {
+        margin-top: 30px;
+      }
+
+      .action-buttons form {
+        margin: 10px;
+      }
+
+      .action-buttons input[type="submit"] {
+        padding: 12px 24px;
+        font-size: 17px;
+        background-color: #ffffff;
+        color: #333;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .action-buttons input[type="submit"]:hover {
+        background-color: #e0e0e0;
+      }
+
+      footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 14px;
+      }
+
+      footer a {
+        color: #ccc;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: #fff;
+      }
+
+      @media screen and (max-width: 600px) {
+        .nav-buttons {
+          flex-direction: column;
+        }
+
+        .action-buttons {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .action-buttons form {
+          width: 100%;
+        }
+
+        .action-buttons input[type="submit"] {
+          width: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="nav">
+        <h1>Online Feedback System</h1>
+      </div>
+      <div class="nav-buttons">
+        <a href="register.html">User Registration</a>
+        <a href="admin_login.html">Admin Login</a>
+      </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="home">
+      <div class="justified-text">
+        <p>
+          <strong>Project Overview: Online Feedback System</strong><br />
+          The "Online Feedback System" is a web-based application designed to streamline feedback collection and analysis.
+          Users can register and provide feedback, while admins can manage feedback questions and review responses.
+        </p>
+      
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Online Feedback System | Designed by <a href="#">YourTeam</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #5f72bd, #9b23ea);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background-color: #222;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav h1 {
+      color: white;
+      margin: 0;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 12px;
+      margin: 10px 0;
+      width: 250px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #fff;
+      color: #333;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ddd;
+    }
+
+    a {
+      color: #fff;
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="nav">
+      <h1>Online Feedback System</h1>
+    </div>
+  </header>
+
+  <!-- Registration Form -->
+  <div class="container">
+    <h2>User Registration</h2>
+    <form action="register" method="post">
+      <input type="text" name="name" placeholder="Full Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <input type="submit" value="Register">
+    </form>
+    <a href="user_login.html">Already have an account? Login here</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Online Feedback System | Designed by <a href="#">YourTeam</a>
+  </footer>
+
+</body>
+</html>

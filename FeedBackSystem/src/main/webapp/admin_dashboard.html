@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      background-color: #222;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav h1 {
+      color: white;
+      margin: 0;
+    }
+
+    .container {
+      flex: 1;
+      padding: 40px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2, h3 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      backdrop-filter: blur(6px);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #fff;
+      color: #333;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ddd;
+    }
+
+    a {
+      color: #fff;
+      font-weight: 500;
+      margin: 10px 0;
+      text-decoration: underline;
+      display: inline-block;
+    }
+
+    a:hover {
+      color: #ddd;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      form {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="nav">
+      <h1>Admin Dashboard</h1>
+    </div>
+  </header>
+
+  <!-- Dashboard Content -->
+  <div class="container">
+    <h2>Welcome, Admin</h2>
+
+    <form action="questionServlet" method="post">
+      <h3>Add New Question</h3>
+      <input type="text" name="question_text" placeholder="Enter question" required><br>
+      <input type="text" name="subject" placeholder="Enter subject" required><br>
+      <input type="number" name="max_marks" placeholder="Max marks" required><br>
+      <input type="submit" value="Add Question">
+    </form>
+
+    <h3>View Feedback Results</h3>
+    <a href="resultServlet">View Results</a>
+
+    <br><br>
+    <a href="index.html">Logout</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Online Feedback System | Designed by <a href="#">YourTeam</a>
+  </footer>
+
+</body>
+</html>
